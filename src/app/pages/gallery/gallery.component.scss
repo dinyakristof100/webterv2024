@@ -1,0 +1,30 @@
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  //align-items: center;
+  //flex-direction: column;
+}
+
+.gallery-item {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+  text-align: center;
+  border: 1px gray solid;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: Trebuchet MS , serif;
+  }
+}

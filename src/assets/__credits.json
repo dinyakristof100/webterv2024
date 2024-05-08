@@ -1,0 +1,20 @@
+[{
+  "id" : "OIG1",
+  "image_url" : "images/OIG1.jpg",
+  "short_description" : "Cégünk a mobiltelefonok és táblagépek javításának elismert szakértője. Kiváló szakembereink garantálják, hogy ügyfeleink eszközei gyorsan és megbízhatóan kerüljenek helyreállításra. Minőségi szolgáltatásunkkal biztosítjuk ügyfeleink elégedettségét minden egyes javítás során."
+},
+{
+"id" : "OIG2",
+"image_url" : "images/OIG2.jpg",
+"short_description" : "Nemcsak mobiltelefonok és táblagépek javításában jeleskedünk, hanem laptopok és számítógépek karbantartásában is. Tapasztalt csapatunk kiemelkedő szakértelemmel rendelkezik mindenféle technikai probléma kezelésében, és garantálja ügyfeleink számára a megbízható és hatékony szolgáltatást. Legyen szó hardveres vagy szoftveres hibákról, mi gondoskodunk arról, hogy ügyfeleink eszközei gyorsan visszatérjenek a működőképes állapotba."
+},
+{
+"id" : "OIG3",
+"image_url" : "images/OIG3.jpg",
+"short_description" : "Csapatunk emellett elektronikai alkatrészek széles választékát is forgalmazza, hogy ügyfeleinknek még szélesebb körű szolgáltatást nyújthassunk. Legyen szükségük új kijelzőre, akkumulátorra, vagy bármilyen más alkatrészre, nálunk megtalálják, amire szükségük van. Minőségi termékeink és szaktudásunk kombinációjával biztosítjuk, hogy ügyfeleink elégedetten távozzanak, tudva, hogy minden szükséges forrást és szakértelmet nálunk megtalálnak."
+},
+{
+"id" : "bomboclat",
+"image_url" : "images/bomboclat.jpg",
+"short_description" : "Emellett nemcsak az alkatrészeket forgalmazzuk, hanem szolgáltatásaink részeként ezeket a termékeket is javítjuk. Tapasztalt technikusaink képesek gyorsan és hatékonyan elvégezni a szükséges javításokat, legyen szó akár kisebb kijelzőcsere, akkumulátorcseréről vagy bármilyen más problémáról. Ügyfeleinknek így egy helyen biztosítjuk mindazt, amire szükségük lehet a mobil-, laptop- és számítógép javításához és karbantartásához, garantálva a gyors és megbízható szolgáltatást."
+}]

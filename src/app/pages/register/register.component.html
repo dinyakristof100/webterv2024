@@ -1,0 +1,52 @@
+<div class="container">
+  <span class="loading-indicator" *ngIf="loading">
+    <mat-spinner></mat-spinner>
+  </span>
+
+  <h2><b>Regisztráció</b></h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+
+      <mat-form-field appearance="fill">
+          <mat-label>Vezetéknév</mat-label>
+            <input matInput formControlName="firstName">
+          <mat-icon matPrefix>person</mat-icon>
+        <mat-error *ngIf="form.get('firstName')?.invalid && form.get('firstName')?.touched">
+          Vezetéknév szükséges.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+          <mat-label>Keresztnév</mat-label>
+            <input matInput formControlName="lastName">
+          <mat-icon matPrefix>person</mat-icon>
+        <mat-error *ngIf="form.get('lastName')?.invalid && form.get('lastName')?.touched">
+          Keresztnév szükséges.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+          <mat-label>Email cím</mat-label>
+            <input matInput formControlName="email">
+          <mat-icon matPrefix>email</mat-icon>
+        <mat-error *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+          Érvényes email cím szükséges.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Jelszó</mat-label>
+          <input matInput formControlName="password" type="password">
+        <mat-icon matPrefix>lock</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+          <mat-label>Jelszó újra</mat-label>
+            <input matInput formControlName="passwordAgain" type="password">
+          <mat-icon matPrefix>lock_outline</mat-icon>
+      </mat-form-field>
+
+    <button class="btn" mat-raised-button color="primary" type="submit" [disabled]="!form.valid || form.get('password')?.value != form.get('passwordAgain')?.value">Regisztrálás</button>
+    </div>
+  </form>
+</div>

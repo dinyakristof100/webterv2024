@@ -1,0 +1,33 @@
+<div class="login-container">
+  <span class="loading-indicator" *ngIf="loading">
+    <mat-spinner></mat-spinner>
+  </span>
+
+  <h2><b>Bejelentkezés</b></h2>
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="form-group">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="geza@elektronika.hu">
+        <mat-icon matPrefix>email</mat-icon>
+        <mat-error *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+          Érvényes email címet adj meg.
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field appearance="fill">
+        <mat-label>Jelszó</mat-label>
+        <input matInput formControlName="password" type="password">
+        <mat-icon matPrefix>lock</mat-icon>
+        <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+          A jelszó legalább 8 karakter hosszúnak kell lennie.
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Bejelentkezés</button>
+  </form>
+  <div class="register-section">
+    <b>Még nincs fiókod? <a mat-raised color="primary" routerLink="/register">Regisztrálj itt!</a></b>
+  </div>
+</div>

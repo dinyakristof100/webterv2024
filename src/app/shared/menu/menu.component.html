@@ -1,0 +1,57 @@
+<!--<header class="navHeader">
+  <nav>
+    <div class="menuIcon" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu" id="menu">
+      <ul class="navUl" id="menuItems">
+            <li *ngFor="let item of navItems">
+              <a routerLink = "{{item.link}}" >{{item.text}}</a>
+            </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+PURPLE/GREEN COLORS
+-->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over">
+    <mat-nav-list>
+      <a mat-list-item *ngFor="let item of navItems" [routerLink]="item.link" (click)="sidenav.close()">
+        {{item.text}}
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <button mat-icon-button (click)="sidenav.toggle()" class="menuIcon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <img src="assets/images/logo.png" alt="Logo" class="logo" height="40" routerLink="/">
+        <div>
+          <ul class="navUl" id="menuItems">
+            <li *ngFor="let item of navItems">
+              <a [routerLink]="item.link" (click)="setCurrentPage(item.text)">{{item.text}}</a>
+            </li>
+
+          </ul>
+        </div>
+        <span class="example-spacer"></span>
+        <span class="currentPage">
+            <h1 style="color:{{this.backgroundColorService.getBackgroundColor()}}">
+              {{this.currentPageService.getCurrentPage()}}
+            </h1>
+          </span>
+        <span class="example-spacer"></span>
+        <span *ngIf="!isUserLoggedIn()" class="login-label"><b>login</b></span>
+        <button *ngIf="!isUserLoggedIn()" mat-icon-button class="example-icon" aria-label="login" routerLink="/login">
+          <mat-icon>login</mat-icon>
+        </button>
+        <span *ngIf="isUserLoggedIn()" class="login-label"><b>logout</b></span>
+        <button *ngIf="isUserLoggedIn()" mat-icon-button class="example-icon" aria-label="logout" routerLink="/main" (click)="logout()">
+          <mat-icon>logout</mat-icon>
+        </button>
+
+      </mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

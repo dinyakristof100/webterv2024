@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "elektronikai-szakszerviz": {
+      "hosting": {
+        "elektronikai-szakszerviz": [
+          "elektronikai-szakszerviz"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "elektronikai-szakszerviz"
+  }
+}

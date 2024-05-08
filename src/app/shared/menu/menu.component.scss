@@ -1,0 +1,161 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+.navHeader{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  vertical-align: center;
+
+}
+
+.navUl{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.navUl li {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  border-left: black 1px solid;
+  border-right: black 1px solid;
+}
+
+.navUl li:first-child{
+  border-left: black 2px solid;
+}
+
+.navUl li:last-child{
+  border-right: black 2px solid;
+}
+
+.navUl li a {
+  display: block;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navUl li:hover {
+  background-color: white;
+  a{
+    color:black;
+  }
+}
+
+
+ul {
+  list-style-type: disc;
+  padding-left: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+
+  li {
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.menuIcon {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .navUl {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+    cursor: pointer;
+    color:white;
+    font-size: large;
+    margin: 10px;
+  }
+
+  .menu {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+    z-index: 10;
+
+    &.active {
+      left: 0;
+    }
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.logo{
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.1);
+}
+
+.login-label{
+  font-size:11px;
+  margin:0;
+  padding:0;
+}
+
+.currentPage{
+  padding: 3px 0;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+mat-sidenav-container{
+  margin-bottom: 20px;
+}
+
+.example-icon{
+  margin-left:0;
+}

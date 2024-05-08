@@ -1,0 +1,7 @@
+<div class="gallery">
+  <div *ngFor="let item of galleryObject" class="gallery-item">
+    <img *ngIf="item.image_url" [src]="item.image_url" alt="Image">
+    <hr>
+    <div class="description">{{ item.short_description }}</div>
+  </div>
+</div>

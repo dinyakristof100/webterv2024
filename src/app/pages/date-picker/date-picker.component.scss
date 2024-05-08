@@ -1,0 +1,28 @@
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%; /* Csökkentett szélesség */
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.mat-form-field {
+  width: 100%; /* Teljes szélesség a konténeren belül */
+  margin-bottom: 15px;
+}
+
+button{
+  margin-top:10px;
+}
+.snackbar-success {
+  color: #fff;  // Light text color
+  background-color: #4CAF50;  // Green background
+  font-size: 16px;  // Larger text
+  padding: 20px;  // Bigger padding
+}
