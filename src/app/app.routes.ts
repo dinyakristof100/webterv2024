@@ -37,6 +37,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/register/register.component').then(m => m.RegisterComponent)
   },
   {
+    path: 'user',
+    loadComponent: () => import('./pages/user/user.component').then(m => m.UserComponent),
+    canActivate: [AuthGuard]
+  },
+  {
     path: '',
     redirectTo: '/main',
     pathMatch: 'full'

@@ -24,6 +24,7 @@ import { Router } from '@angular/router';
 })
 export class DatePickerComponent {
   selectedDate: Date | null = null;
+  minDate: Date;
 
   constructor(
     private backgroundService: BackgroundColorService,
@@ -32,6 +33,7 @@ export class DatePickerComponent {
     private router: Router
   ) {
     this.backgroundService.setBackgroundColor('#ccffe6');
+    this.minDate = new Date();
   }
 
   sendDate() {

@@ -1,7 +1,7 @@
 <div class="container">
   <mat-form-field class="example-full-width">
     <mat-label>Válassz időpontot</mat-label>
-    <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate">
+    <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate" [min]="minDate">
     <mat-hint>MM/DD/YYYY</mat-hint>
     <mat-datepicker-toggle matIconSuffix [for]="picker">
       <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>

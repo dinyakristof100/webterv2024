@@ -37,5 +37,9 @@ export const navItems = [
   {
     'link' : '/gallery',
     'text' : 'Galéria'
+  },
+  {
+    'link' : '/user',
+    'text' : 'Fiókom'
   }
 ]

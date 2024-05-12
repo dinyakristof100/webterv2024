@@ -1,0 +1,7 @@
+<div>
+  <h2>Email frissítése</h2>
+  <form [formGroup]="emailForm" (submit)="updateEmail()">
+    <input type="email" formControlName="newEmail" placeholder="New Email" [value]="userEmail">
+    <button type="submit">Frissítés</button>
+  </form>
+</div>
